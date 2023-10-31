@@ -1,6 +1,8 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const initialState = {
   name: "",
@@ -18,21 +20,32 @@ export const Contact = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
+    console.log(name, email, message, e.target);
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_USER_ID")
+      .send("service_zkdonet", "template_q350xir",
+      {from_name: name,
+      to_name: "AY Media",
+      message: message,
+      reply_to: email},
+      "wz2pjUgCWOvB5UNua")
       .then(
         (result) => {
           console.log(result.text);
           clearState();
+          toast.success("Email sent, we will reply to you as soon as possible")
         },
         (error) => {
           console.log(error.text);
+          toast.error("error: " + error.text)
         }
       );
   };
   return (
     <div>
+      <ToastContainer 
+      position="bottom-right"
+      theme="colored"
+      />
       <div id="contact">
         <div className="container">
           <div className="col-md-8">
@@ -146,16 +159,9 @@ export const Contact = (props) => {
           </div>
         </div>
       </div>
-      <div id="footer">
-        <div className="container text-center">
-          <p>
-            &copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}
-            <a href="http://www.templatewire.com" rel="nofollow">
-              TemplateWire
-            </a>
-          </p>
-        </div>
-      </div>
+      {/* <div id="footer">
+        footer
+      </div> */}
     </div>
   );
 };

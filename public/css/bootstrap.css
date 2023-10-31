@@ -1067,8 +1067,8 @@ th {
 }
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 *:before,
 *:after {
@@ -1587,6 +1587,9 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.overlay .container{
+  height:100%;
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -1599,7 +1602,10 @@ pre code {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 100%;
+  }
+  .overlay .container{
+    padding-right: 20%;
   }
 }
 .container-fluid {
@@ -2081,7 +2087,7 @@ pre code {
     margin-left: 25%;
   }
   .col-md-offset-2 {
-    margin-left: 16.66666667%;
+    margin-left: 5%;
   }
   .col-md-offset-1 {
     margin-left: 8.33333333%;
@@ -4097,7 +4103,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #000000;
 }
 .nav-stacked > li {
   float: none;
@@ -4943,7 +4949,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #337ab7;
+  color: #000000;
   background-color: #fff;
 }
 .list-group-item > .badge {
