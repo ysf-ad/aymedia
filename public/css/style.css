@@ -215,6 +215,11 @@ a:focus,
   outline-offset: none;
 }
 /* Header Section */
+
+#header{
+  background: black;
+}
+
 .intro {
   width: 100%;
   padding: 0;
