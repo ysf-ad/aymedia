@@ -275,6 +275,11 @@ header .intro-text {
   justify-content: center;
 }
 
+.about .container .row div{
+  display: flex;
+  justify-content: center;
+}
+
 /* Features Section */
 #features {
   background: #f6f6f6;
@@ -332,7 +337,7 @@ header .intro-text {
   margin-top: 10px;
   background: #fff;
   border-right: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
+  /* box-shadow: 0 0 50px rgba(0, 0, 0, 0.06); */
 }
 #about p {
   line-height: 24px;

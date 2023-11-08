@@ -4,19 +4,19 @@
     "paragraph": "Let our specialized team handle the complexities of generating consistent, high-ROI conversions so you can concentrate on your core business."
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "We are a passionate team with a rich blend of expertise in ecommerce, programming, and technical design.  With hands-on experience in various campaigns, we know what works. Our strategies are grounded in real-world insights, ensuring that our clients achieve their advertising goals tangibly and efficiently.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
-    ],
-    "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
-    ]
+      "Expertise",
+      "Real-World Scenarios",
+      "Practical Results",
+      "Innovative Strategies"
+  ],
+  "Why2": [
+      "Client Successes",
+      "Trend Awareness",
+      "Dynamic Solutions",
+      "Reliability"
+  ]
   },
   "Gallery": [
     {
@@ -69,12 +69,12 @@
     {
       "icon": "fa fa-bullhorn",
       "name": "Online Advertising",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "text": "Leverage the reach of Google, Facebook, TikTok, and Pinterest with our expert advertising strategies. Through precise targeting and continuous optimization, we ensure maximum visibility and engagement for your campaigns, driving meaningful results and conversions."
     },
     {
       "icon": "fa fa-globe",
-      "name": "SEO",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "name": "SEO/CRO",
+      "text": "Elevate your online presence with our specialized SEO (Search Engine Optimization) and CRO (Conversion Rate Optimization) services. We enhance your search rankings, drive organic traffic, and refine user experiences to boost conversions."
     }
   ],
   "Testimonials": [
