@@ -275,7 +275,7 @@ header .intro-text {
   justify-content: center;
 }
 
-.about .container .row div{
+#about > .container > .row > div{
   display: flex;
   justify-content: center;
 }
