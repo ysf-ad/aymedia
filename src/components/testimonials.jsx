@@ -5,21 +5,16 @@ export const Testimonials = (props) => {
     <div id="testimonials">
       <div className="container">
         <div className="section-title text-center">
-          <h2>What our clients say</h2>
+          <h2>Our Clients</h2>
         </div>
-        <div className="row">
+        <div className="row" style={{display:"flex", justifyContent:"center"}}>
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
+                <div key={`${d.name}-${i}`}>
                   <div className="testimonial">
-                    <div className="testimonial-image">
-                      {" "}
-                      <img src={d.img} alt="" />{" "}
-                    </div>
-                    <div className="testimonial-content">
-                      <p>"{d.text}"</p>
-                      <div className="testimonial-meta"> - {d.name} </div>
-                    </div>
+                    
+                      <img src={d.img} alt="" style={{filter:"opacity(0.5)"}} />{" "}
+
                   </div>
                 </div>
               ))
