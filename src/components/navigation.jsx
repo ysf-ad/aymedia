@@ -18,7 +18,8 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-             AY MEDIA
+             <img src='img/aymedialogo-slim.png' width='200em' style={{filter:"invert(1)", margin:"-0.5em"}}/>
+             {/* AY MEDIA */}
           </a>{" "}
         </div>
 
