@@ -449,6 +449,16 @@ header .intro-text {
   font-size: 32px;
   margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+.testimonials-row{
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
 .testimonial {
   position: relative;
   padding: 20px;

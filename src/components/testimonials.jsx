@@ -7,13 +7,13 @@ export const Testimonials = (props) => {
         <div className="section-title text-center">
           <h2>Our Clients</h2>
         </div>
-        <div className="row" style={{display:"flex", justifyContent:"center"}}>
+        <div className="row testimonials-row" style={{display:"flex", justifyContent:"center"}}>
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`}>
-                  <div className="testimonial">
+                <div key={`${d.name}-${i}`} style={{display:"flex"}}>
+                  <div className="testimonial" style={{display:"flex", alignItems:"center"}}>
                     
-                      <img src={d.img} alt="" style={{filter:"opacity(0.5)"}} />{" "}
+                      <img src={d.img} alt="" style={{filter:"opacity(0.5)", width:"min(20em, 90vw)"}} />{" "}
 
                   </div>
                 </div>
