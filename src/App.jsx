@@ -44,7 +44,7 @@ const App = () => {
       <Header data={landingPageData.Header} />
       <Services data={landingPageData.Services} />
 
-      <Gallery data={landingPageData.Gallery} />
+      {/* <Gallery data={landingPageData.Gallery} /> */}
       <About data={landingPageData.About} />
       {/* <Features data={landingPageData.Features} /> */}
       <Testimonials data={landingPageData.Testimonials} />
