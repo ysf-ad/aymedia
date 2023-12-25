@@ -17,7 +17,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
+          <a className="navbar-brand page-scroll" href="/#page-top">
              <img src='img/aymedialogo-slim.png' width='200em' style={{filter:"invert(1)", margin:"-0.5em"}}/>
              {/* AY MEDIA */}
           </a>{" "}
@@ -29,24 +29,29 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#about" className="page-scroll">
+              <a href="/#about" className="page-scroll">
                 About
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
+              <a href="/#services" className="page-scroll">
                 Services
               </a>
             </li>
-            {/* <li>
+            <li>
               <a href="#portfolio" className="page-scroll">
                 Gallery
               </a>
-            </li> */}
-            <li>
-              <a href="#testimonials" className="page-scroll">
-                Testimonials
+            </li>
+            <li className="testimonials-dropdown">
+              <a href="/#testimonials" className="page-scroll">
+                Testimonials-
+                <i class="fa fa-caret-down"></i>
               </a>
+              <div class="dropdown-content">
+      <a href="/doner-gyros">Doner & Gyros</a>
+      <a href="/cheery-chews">Cheery Chews</a>
+    </div>
             </li>
             {/* <li>
               <a href="#team" className="page-scroll">

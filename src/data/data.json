@@ -81,12 +81,12 @@
     {
       "img": "https://donerandgyros.com/front_assets/images/logo.png",
       "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "name": "doner-gyros"
     },
     {
       "img": "https://cheerychews.com/wp-content/uploads/2021/05/CheeryChews-logo-1.png",
       "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
+      "name": "cheery-chews"
     }
   ],
   "Team": [
@@ -115,7 +115,7 @@
     "address": "4321 California St, San Francisco, CA 12345 ",
     "phone": "+1 416 848 3445",
     "email": "sales.aymedia@gmail.com",
-    "facebook": "fb.com",
+    "facebook": "https://www.instagram.com/aymedia.agency/",
     "twitter": "twitter.com",
     "youtube": "youtube.com"
   },

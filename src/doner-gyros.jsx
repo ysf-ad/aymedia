@@ -17,41 +17,30 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
   speedAsDuration: true,
 });
 
-const App = () => {
+const DonerGyros = () => {
   const [landingPageData, setLandingPageData] = useState({});
-
   useEffect(() => {
     setLandingPageData(JsonData);
-
-    // Dynamically load the LightWidget script
-    const script = document.createElement('script');
-    script.src = "https://cdn.lightwidget.com/widgets/lightwidget.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Remove the script when the component unmounts
-      document.body.removeChild(script);
-    };
-
+    console.log(JsonData)
   }, []);
-
-  
 
   return (
     <div>
-      <Navigation />
-      <Header data={landingPageData.Header} />
-      <Services data={landingPageData.Services} />
-
-      <Gallery data={landingPageData.Gallery} />
-      <About data={landingPageData.About} />
-      {/* <Features data={landingPageData.Features} /> */}
-      <Testimonials data={landingPageData.Testimonials} />
-      {/* <Team data={landingPageData.Team} /> */}
+        <div>
+            <Navigation></Navigation>
+        </div>
+      <div style={{marginTop:"100px"}}>
+        <div className="client-title"><img src={JsonData ? JsonData.Testimonials[0].img : ""}></img>
+        </div>
+        <div className="client-title">Doner & Gyros Case Study</div>
+        <div className="client-info-container">
+            <p>404
+            </p>
+        </div>
+    </div>
       <Contact data={landingPageData.Contact} />
     </div>
   );
 };
 
-export default App;
+export default DonerGyros;

@@ -10,11 +10,11 @@ export const Testimonials = (props) => {
         <div className="row testimonials-row" style={{display:"flex", justifyContent:"center"}}>
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} style={{display:"flex"}}>
+                <div class={d.name} key={`${d.name}-${i}`} style={{display:"flex"}}>
                   <div className="testimonial" style={{display:"flex", alignItems:"center"}}>
-                    
+                       <a href={d.name}>
                       <img src={d.img} alt="" style={{filter:"opacity(0.5)", width:"min(20em, 90vw)"}} />{" "}
-
+                      </a>
                   </div>
                 </div>
               ))
