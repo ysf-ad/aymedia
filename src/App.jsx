@@ -23,16 +23,19 @@ const App = () => {
   useEffect(() => {
     setLandingPageData(JsonData);
 
-    // Dynamically load the LightWidget script
-    const script = document.createElement('script');
-    script.src = "https://cdn.lightwidget.com/widgets/lightwidget.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Remove the script when the component unmounts
-      document.body.removeChild(script);
-    };
+       // Create script element
+       const script = document.createElement('script');
+       script.src = 'https://w.behold.so/widget.js';
+       script.type = 'module';
+       script.async = true;
+   
+       // Append script to the body
+       document.body.appendChild(script);
+   
+       // Clean-up the script when the component unmounts
+       return () => {
+         document.body.removeChild(script);
+       };
 
   }, []);
 
@@ -44,7 +47,7 @@ const App = () => {
       <Header data={landingPageData.Header} />
       <Services data={landingPageData.Services} />
 
-      {/* <Gallery data={landingPageData.Gallery} /> */}
+      <Gallery data={landingPageData.Gallery} />
       <About data={landingPageData.About} />
       {/* <Features data={landingPageData.Features} /> */}
       <Testimonials data={landingPageData.Testimonials} />

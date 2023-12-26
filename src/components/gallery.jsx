@@ -14,16 +14,12 @@ export const Gallery = (props) => {
         </div> */}
         <div style={{position:"relative", textAlign:"center", margin:"0 10%"}}>
         <p style={{font:"24px"}}>Our Instagram</p>
-        <img src='img/aymedialogo-slim.png' width='200em'/>
-      <iframe 
-      src="//lightwidget.com/widgets/97cf9e95a0705fed9d924fc8d7e11814.html"
-      scrolling="no"
-      allowTransparency="true"
-      className="lightwidget-widget"
-      style={{ width: '100%', border: 0, overflow: 'hidden' }}
-    ></iframe>
+        <div><img src='img/aymedialogo-slim.png' width='200em'/></div>
+        <button className="follow-button">follow</button>
+        <figure data-behold-id="YaiWmSlDgZBLRX4Zl3zw"></figure>
     </div>
       </div>
     </div>
   );
 };
+
