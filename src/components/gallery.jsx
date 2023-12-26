@@ -15,7 +15,9 @@ export const Gallery = (props) => {
         <div style={{position:"relative", textAlign:"center", margin:"0 10%"}}>
         <p style={{font:"24px"}}>Our Instagram</p>
         <div><img src='img/aymedialogo-slim.png' width='200em'/></div>
+        <a href="https://www.instagram.com/aymedia.agency/">
         <button className="follow-button">follow</button>
+        </a>
         <figure data-behold-id="YaiWmSlDgZBLRX4Zl3zw"></figure>
     </div>
       </div>
