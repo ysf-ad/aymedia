@@ -5,15 +5,15 @@ import App from './App';
 import CheeryChews from './cheery-chews';
 import DonerGyros from './doner-gyros';
 import * as serviceWorker from './serviceWorker';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Routes, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
         <BrowserRouter>
       <Routes>
           <Route index element={<App />} />
-          <Route path="cheery-chews" element={<CheeryChews />} />
-          <Route path="doner-gyros" element={<DonerGyros />} />
+          <Route path="/cheery-chews" element={<CheeryChews />} />
+          <Route path="/doner-gyros" element={<DonerGyros />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
