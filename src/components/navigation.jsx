@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Navigation = (props) => {
   return (
@@ -49,8 +50,8 @@ export const Navigation = (props) => {
                 <i class="fa fa-caret-down"></i>
               </a>
               <div class="dropdown-content">
-      <a href="/doner-gyros">Doner & Gyros</a>
-      <a href="/cheery-chews">Cheery Chews</a>
+      <Link to="/doner-gyros">Doner & Gyros</Link>
+      <Link to="/cheery-chews">Cheery Chews</Link>
     </div>
             </li>
             {/* <li>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Testimonials = (props) => {
   return (
@@ -12,9 +13,9 @@ export const Testimonials = (props) => {
             ? props.data.map((d, i) => (
                 <div class={d.name} key={`${d.name}-${i}`} style={{display:"flex"}}>
                   <div className="testimonial" style={{display:"flex", alignItems:"center"}}>
-                       <a href={d.name}>
+                       <Link to={d.name}>
                       <img src={d.img} alt="" style={{filter:"opacity(0.5)", width:"min(20em, 90vw)"}} />{" "}
-                      </a>
+                      </Link>
                   </div>
                 </div>
               ))
